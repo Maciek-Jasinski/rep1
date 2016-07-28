@@ -1,0 +1,7 @@
+%description{
+	padding: 20px 20px;
+	@include font-size($header-description-font-sizes);
+	font-weight: bold;
+	line-height: 150%;
+	color: $brand-description;
+}

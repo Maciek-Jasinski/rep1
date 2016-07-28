@@ -1,0 +1,97 @@
+.contact{
+	padding-top: 60px;
+	text-align: center;
+	&__title{
+		animation: 1s flipInY paused;
+		@extend %headers;
+	}
+	&__icon{
+		animation: 1s bg 0.5s paused;
+		@extend %heart-icon;
+	}
+	&__description{
+		animation: 0.5s slide-left 0.8s backwards paused;
+		@extend %description;
+	}
+	&__location{
+		animation: 0.5s slide-down 1.2s backwards paused;
+		padding: 20px 20px;
+		text-align: left;
+		&__title{
+			@include font-size($contact-font-sizes);
+			line-height: 160%;
+			padding-bottom: 20px;
+		}
+		&__description{
+			padding-top: 10px;
+			padding-right: 80px;
+			@include font-size($contact-desc-font-sizes);
+			color: $brand-description;
+			line-height: 150%;
+		}
+	}
+	&__form{
+		animation: 0.5s slide-down 1.5s backwards paused;
+		padding: 30px 20px;
+		text-align: left;
+		&__title{
+			@include font-size($h3-font-sizes);
+			line-height: 160%;
+			padding-bottom: 20px;
+			font-weight: bold;
+		}
+		&__field1{
+			height: 35px;
+			padding: 5px;
+			border: none;
+			border-bottom: 1px solid $brand-gray;
+			width: calc(50% - 15px);
+			margin-bottom: 15px;
+			margin-right: 5px;
+		}
+		&__field2{
+			height: 35px;
+			padding: 5px;
+			border: none;
+			border-bottom: 1px solid $brand-gray;
+			width: calc(50% - 15px);
+			margin-bottom: 15px;
+		}
+		&__field3{
+			border: none;
+			border-bottom: 1px solid $brand-gray;
+			width: 100%;
+			margin-bottom: 15px;
+			height: 60px;
+		}
+		&__send{
+			float: right;
+			padding: 10px 0;;
+			&>i{
+				color: $brand-headers;
+				font-size: 1.4em;
+				display: inline-block;
+				margin-right: 5px;
+				
+			}
+			&__description{
+				display: inline-block;
+				padding: 5px;
+				@include font-size($description-font-sizes);
+			}
+		}
+	}
+	&__social{
+		animation: 1.5s bg 1.7s backwards paused;
+		padding: 20px;
+		padding-top: 30px;
+		font-size: 1.6em;
+		color: $brand-gray;
+		&__item{
+			display: inline-block;
+			padding: 10px 5px;
+			padding-top: 30px;
+			
+		}
+	}
+}

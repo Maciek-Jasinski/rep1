@@ -1,0 +1,55 @@
+.fun-facts{
+	background: url(../images/bg_2.jpg) center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 60px 0;
+	padding-bottom: 90px;
+	text-align: center;
+	&__title{
+		animation: 1s flipInY paused;
+		@extend %headers;
+	}
+	&__icon{
+		animation: 1s bg 0.5s paused;
+		@extend %heart-icon;
+	}
+	&__list{
+		text-align: center;
+		color: $brand-white;
+		&__item{
+			padding: 20px 40px;
+			&>i{
+				margin-top: 20px;
+				font-size: 2.4em;
+				border: 1px solid $brand-gray;
+				border-radius: 50%;
+				display: inline-block;
+				padding: 40px;
+			}
+			&__count{
+				font-size: 4em;
+				font-weight: bold;
+				padding: 30px;
+				padding-bottom: 15px;
+				display: block;
+			}
+			&__title{
+				text-transform: uppercase;
+				@include font-size($h4-font-sizes);
+				letter-spacing: 1px;
+			}
+			&:nth-child(1) {
+				animation: 1s slide-up 0.8s backwards paused;
+			}
+			&:nth-child(2) {
+				animation: 1s slide-up 1.1s backwards paused;
+			}
+			&:nth-child(3) {
+				animation: 1s slide-up 1.4s backwards paused;
+			}
+			&:nth-child(4) {
+				animation: 1s slide-up 1.7s backwards paused;
+			}
+		}
+	}
+}

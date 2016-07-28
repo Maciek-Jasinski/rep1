@@ -1,0 +1,90 @@
+$base-font: 'Open Sans', Arial, sans-serif;
+$logo-font: 'Pacifico', cursive;
+
+$breakpoints: (
+  'small': 550px,
+  'medium': 750px,
+  'large': 1000px,
+);
+$h1-font-sizes: (
+  'null'  : 2.5em,
+  'small': 3em,
+  'medium': 3.3em,
+  'large': 4em
+);
+$h2-font-sizes: (
+  'null'  : 1.9em,
+  'small' : 2.1em,
+  'medium': 2.2em,
+  'large' : 2.2em
+);
+$h3-font-sizes: (
+  'null'  : 1.4em,
+  'small' : 1.8em,
+  'medium': 1.8em,
+  'large' : 2.5em
+);
+$h4-font-sizes: (
+  'null'  : 1.3em,
+  'small' : 1.4em,
+  'medium': 1.5em,
+  'large' : 1.6em
+);
+$contact-desc-font-sizes: (
+  'null'  : 0.9em,
+  'small' : 1.0em,
+  'medium': 1.0em,
+  'large' : 1em
+);
+$description-font-sizes: (
+  'null' : 1em,
+  'small': 1.1em,
+  'medium' : 0.9em,
+);
+$header-description-font-sizes: (
+  'null' : 1em,
+  'small': 1.1em,
+  'medium': 1.2em,
+);
+$description-item-font-sizes: (
+  'null' : 0.9em,
+  'small': 1.1em,
+  'medium' : 0.9em,
+);
+$description-contact-item-sizes: (
+  'null' : 0.9em,
+  'small': 1.1em,
+  'medium' : 0.9em,
+);
+$description-header-font-sizes: (
+  'null'  : 1.2em,
+  'small' : 1.4em,
+  'medium': 1.4em,
+);
+$logo-font-sizes: (
+  'null'  : 2em,
+  'medium' : 2.2em,
+);
+$contact-font-sizes: (
+  'null'  : 1.0em,
+  'medium' : 1.5em,
+);
+$home-desc-font-sizes: (
+  'null'  : 0.9em,
+  'small' : 1.3em,
+);
+
+
+$brand-span: #0fde95;
+$brand-logo-line: #17526e;
+$brand-white: #fff;
+$brand-black: #000;
+$brand-gray: #6e7476;
+$brand-headers: #0eb493;
+$brand-hovers: rgba(32, 181, 151, 0.7);
+$brand-titles: #0eb493;
+$brand-description: #5b646e;
+$brand-line: #32b0ee;
+$brand-icon-gray: #c3c6c7;
+$brand-light-black: 062033;
+$brand-bg-gray: #f4f7f9;

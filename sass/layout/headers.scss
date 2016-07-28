@@ -1,0 +1,15 @@
+%headers {
+	@include font-size($h2-font-sizes);
+	color: $brand-titles;
+	text-transform: uppercase;
+	font-weight: bolder;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+%item-headers{
+	@include font-size($h4-font-sizes);
+	color: $brand-black;
+	font-weight: bold;
+	text-align: center;
+}

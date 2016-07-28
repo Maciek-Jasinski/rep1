@@ -1,0 +1,337 @@
+@media (min-width: 550px) {
+	.logo{
+		margin-left: 40px;
+	}
+	.navigation__hamburger {
+		padding-right: 40px;
+	}
+	.features{
+		padding: 100px;
+		padding-left: calc(50% - 270px);
+		padding-right: calc(50% - 270px);
+	}
+	.works__items {
+		overflow: hidden;
+		&:nth-child(2n-1){
+			
+		}
+		&__pic{
+			overflow: hidden;
+			
+			padding: 0;
+			width: 50%;
+			float: left;
+		}
+	}
+	.works,
+	.features,
+	.fun-facts,
+	.team,
+	.contact{
+		&__icon{
+			margin-left: calc(50% - 120px);
+			margin-right: calc(50% - 120px);
+		}
+	}
+	.contact__location {
+		padding-top: 80px;
+	}
+	.contact__social {
+		padding-top: 50px;
+	}
+}
+
+@media (min-width: 750px) {
+	.logo{
+		width: calc(50% - 100px);
+	}
+	.navigation__hamburger {
+		display: none;
+	}
+	.navigation__list{
+		display: inline-block;
+		width: 55%;
+		padding-right: 15px;
+		box-sizing: border-box;
+		padding-top: 0;
+		padding-left: calc(15% - 110px);
+		&__item{
+			float: left;
+			padding: 30px 14px;
+			&__link{
+			color: $brand-white;
+			}
+		}
+	}
+	.home__slide1,
+	.home__slide2,
+	.home__slide3 {
+		&__description{
+		padding-top: 30px;
+		}
+		&__switcher{
+			&__item{
+				font-size: 2em;
+			}
+		}
+	}
+
+	.works__items{
+		overflow: hidden;
+		&__pic{
+			width: 50%;
+			float: left;
+		}
+	}
+
+	.team__slider__list{
+		overflow: hidden;
+		&__item {
+			padding: 0;
+			width: 50%;
+			float: left;
+			text-align: center;
+		}
+	}
+	.fun-facts__list{
+		overflow: hidden;
+		&__item {
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+		padding-top: 35px;
+		}	
+	}
+	.contact{
+		padding-top: 90px;
+		&__location{
+			width: 30%;
+			float: left;
+			box-sizing: border-box;
+			padding-left: 40px;
+			&__description {
+				padding-right: 20px;
+			}
+		}
+		&__form {
+			width: 70%;
+			display: inline-block;
+			box-sizing: border-box;
+			padding-top: 80px;
+		}
+	}
+	.site-footer{
+		padding: 30px;
+		&__list__item{
+			padding-top: 50px;
+			&:nth-child(1),
+			&:nth-child(2) {
+				width: 49%;
+				display: inline-block;
+			}
+			&:nth-child(2) {
+				padding-left: 15px;
+				box-sizing: border-box;
+			}
+			&__field {
+				width: 60%;
+			}
+			&__things__list{
+				&__item{
+					padding: 15px 5px;
+				}
+			}
+			&__desc{
+				float: left;
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	.navigation__list{
+		width: 50%;
+		padding-left: calc(15% - 50px);
+		padding-right: 0;
+	}
+	.features {
+		padding: 90px 0;
+		&__list{
+			&__item{
+				width: calc(33% - 20px);
+				display: inline-block;
+				padding: 30px 20px;
+				box-sizing: border-box;
+				&>i{
+					float: left;
+					margin: 0;
+					margin-top: 40px;
+				}
+				&__title{
+					text-align: left;
+					margin-left: 65px;
+					padding-left: 0;
+					padding-top: 50px;
+				}
+				&__description{
+					margin-left: 65px;
+					text-align: left;
+				}
+			}
+		}
+	}
+	.works {
+		padding-top: 90px;
+		&__description{
+			margin-left: calc(50% - 450px);
+			margin-right: calc(50% - 450px);
+		}
+		&__items {
+			padding: 0;
+			overflow: hidden;
+			&__pic{
+			width: 25%;
+			float: left;
+			
+			}
+		}
+	}
+	.team{
+		padding-top: 90px;
+		&__description{
+			margin-left: calc(50% - 450px);
+			margin-right: calc(50% - 450px);
+		}
+		&__slider__list{
+			text-align: center;
+			overflow: hidden;
+			padding: 30px 50px;
+			box-sizing: border-box;
+			&__item {
+				box-sizing: border-box;
+				padding: 0 10px;
+				width: 25%;
+				float: left;
+				&__pic{
+					&__cover{
+						&__title{
+							padding: 10px;
+						}
+						&__description{
+							padding-top: 5px; 
+						}
+						&__list {
+							padding-top: 30px;
+						}
+					}
+				}
+			}	
+		}
+	} 
+	.fun-facts{
+		&__list{
+			padding: 0 50px;
+			height: 400px;
+			text-align: center;
+			&__item{
+				float: left;
+				width: 25%;
+			}
+		}
+	}
+	.contact {
+		&__description{
+			margin-left: calc(50% - 450px);
+			margin-right: calc(50% - 450px);
+		}
+		&__location{
+			padding-left: 80px;
+			box-size: border-box;
+			width: 25%;
+		}
+		&__form{
+			width: 60%;
+			float: left;
+			padding-left: 20px;;
+		}
+		&__social{
+			padding-top: 160px;
+			padding-right: 100px;
+			&__item{
+				display: block;
+				padding: 5px;
+			}
+		}
+	}
+	.site-footer {
+		padding: 30px 70px;
+		padding-bottom: 90px;
+		&__list{
+			&__item{
+				width: 25%;
+				float: left;
+				box-sizing: border-box;
+				padding: 15px;
+				padding-top: 50px; 
+				&:nth-child(1),
+				&:nth-child(2) {
+					width: 25%;
+				}
+				&__title{
+					padding-top: 20px;
+					padding-bottom: 20px;
+				}
+				&__field{
+					margin-top: 5px;
+					margin-bottom: 8px;
+					width: 90%;
+				}
+				&__things__list{
+					&__item{
+						padding: 5px;
+					}
+				}
+				&__desc{
+					padding-top: 40px;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.navigation__list{
+		padding-left: 18%;
+	}
+	.team{
+		padding-bottom: 30px;
+		padding-top: 90px;
+		&__slider__list{
+			overflow: hidden;
+			
+			&__item {
+				box-sizing: border-box;
+				padding: 20px;
+				width: 25%;
+				display: inline-block;
+				&__pic{
+					&__cover{
+						&__title{
+							padding: 10px;
+							padding-top: 40px;
+						}
+						&__description{
+							padding-top: 15px; 
+						}
+						&__list {
+							padding-top: 50px;
+							&__item{
+								padding: 0 7px;
+							}
+						}
+					}
+				}
+			}	
+		}
+	} 
+}

@@ -1,0 +1,26 @@
+.logo {
+	float: left;
+	font-family: $base-font;
+	width: 80vw;
+	padding: 20px 0;
+	&__title{
+		color: $brand-white;
+		@include font-size($logo-font-sizes);
+		display: inline-block;
+		font-family: $logo-font;
+		color: $brand-white;
+		padding-right: 20px;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	&>p{
+		font-family: $base-font;
+		color: $brand-gray;
+		padding-top: 10px;
+		padding-left: 20px;
+		border-left: 1px solid $brand-logo-line;
+		display: inline-block;
+		
+	}
+}

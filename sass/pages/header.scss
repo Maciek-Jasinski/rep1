@@ -1,0 +1,10 @@
+.site-header{
+	position: fixed;
+	background-color: rgba(16, 22, 54, 0.2);
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 999;
+	&--fixed {
+		background-color: $brand-headers;
+	}
+}

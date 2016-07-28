@@ -1,0 +1,60 @@
+@keyframes flipInY {
+            0% {
+               transform: perspective(400px) rotateY(180deg);
+               opacity: 0;
+            }
+            40% {
+               transform: perspective(400px) rotateY(-10deg);
+            }
+            70% {
+               transform: perspective(400px) rotateY(10deg);
+            }
+            100% {
+               transform: perspective(400px) rotateY(0deg);
+               opacity: 1;
+            }
+         }
+@keyframes slide-up{
+	from{transform: translateY(40px);
+		opacity: 0;}
+	to{transform: translateY(0);
+		opacity: 1;}
+}
+@keyframes slide-left{
+	from{transform: translateX(300px);
+		opacity: 0;}
+	to{transform: translateX(0);
+		opacity: 1;}
+}
+@keyframes slide-right{
+	from{transform: translateX(-300px);
+		opacity: 0;}
+	to{transform: translateX(0);
+		opacity: 1;}
+}
+@keyframes slide-down{
+	from{transform: translateY(-40px);
+		opacity: 0;}
+	to{transform: translateY(0);
+		opacity: 1;}
+}
+@keyframes bg{
+	from{opacity:0}
+	to{}
+}
+@keyframes bounceInDown {
+   0% {
+      opacity: 0;
+      transform: translateY(-2000px);
+   }
+   60% {
+      opacity: 1;
+      transform: translateY(30px);
+   }
+   80% {
+      transform: translateY(-10px);
+   }
+   100% {
+      transform: translateY(0);
+   }
+} 

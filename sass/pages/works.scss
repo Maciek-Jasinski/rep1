@@ -1,0 +1,87 @@
+.works{
+	padding: 60px 0px;
+	text-align: center;
+	&__title{
+		animation: 1s flipInY paused;
+		@extend %headers;
+	}
+	&__icon{
+		animation: 1s bg 0.5s paused;
+		@extend %heart-icon;
+	}
+	&__description{
+		animation: 0.5s slide-left 0.8s backwards paused;
+		@extend %description;
+	}
+	&__list{
+		animation: 0.5s slide-left 1s backwards paused;
+		padding: 40px 20px;
+		text-align: center;	
+		&__titles{
+			border-radius: 7px;
+			display: inline-block;
+			padding: 10px 15px;
+			font-weight: bold;
+			color: $brand-light-black;
+			transition: 0.3s;
+			&:hover,
+			.active{
+				cursor: pointer;
+				background-color: $brand-headers;
+				color: $brand-white;
+				transition: 0.3s;
+			}
+		}
+	}
+	&__items{
+		min-height: 300px;
+		padding: 0 10px;
+		&__pic{
+			overflow: hidden;
+			position: relative;
+			&>img{
+			width: 100%;
+			transistion: 0.5s;
+			}
+			&__cover{
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: $brand-hovers;
+				color: $brand-white;
+				padding: 50px;
+				padding-top: 70px;
+				width: 100%;
+				height: 100%;
+				box-sizing: border-box;
+				opacity: 0;
+				transform: rotateY(-180deg) scale(0.5,0.5);
+				transition: 0.7s;
+				&>i{
+					font-size: 1.9em;
+				}
+				&__title{
+					padding: 15px 0;
+					@include font-size($description-font-sizes);
+					font-weight: bold;
+				}
+				&__description{
+					@include font-size($description-item-font-sizes);
+				}
+			}
+			&:hover .works__items__pic__cover{
+				transition: 0.7s;
+				transform: scale(1,1);
+				opacity: 1;
+			}
+		}
+
+	}
+}
+
+.active{
+
+			background-color: $brand-headers;
+			color: $brand-white;
+			transition: 0.3s;
+		}

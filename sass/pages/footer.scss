@@ -1,0 +1,80 @@
+.site-footer{
+	background-color: $brand-headers;
+	padding: 30px 15px;
+	border-top: 8px solid $brand-gray;
+	color: $brand-white;
+	box-sizing: border-box;
+	&__list{
+		&__item{
+			display: block;
+			padding: 20px 0;
+			&__logo{
+				font-family: $logo-font;
+				@include font-size($logo-font-sizes);
+			}
+			&__description{
+				padding-top: 20px;
+				@include font-size($description-contact-item-sizes);
+				line-height: 200%;
+			}
+			&__title{
+				padding-bottom: 30px;
+				font-weight: bold;
+				@include font-size($description-font-sizes);
+			}
+			&__field{
+				background-color: transparent;
+				border: 1px solid $brand-white;
+				border-radius: 5px;
+				width: 70vw;
+				height: 35px;
+			}
+			&__things__list{
+				display: inline-block;
+				width: calc(50% - 10px);
+				&:nth-child(2) {
+					padding-left: 15px;
+				}
+				box-sizing: border-box;
+				&__item{
+					padding: 5px;
+					&__link{
+						color: $brand-white;
+						@include font-size($description-contact-item-sizes);
+					}
+				}
+			}
+			&__desc{
+				padding-bottom: 35px;
+				text-align: center;
+				letter-spacing: 1px;
+				line-height: 150%;
+				@include font-size($description-contact-item-sizes);
+				&>a{
+					color: $brand-black;
+				}
+				&>i{
+					margin: 0 5px;
+				}
+			}
+			&__sign{
+				padding-bottom: 20px;
+				text-align: center;
+				color: $brand-black;
+				@include font-size($description-contact-item-sizes);
+			}
+			&:nth-child(1) {
+				animation: 1s slide-up backwards paused;
+			}
+			&:nth-child(2) {
+				animation: 1s slide-up 0.3s backwards paused;
+			}
+			&:nth-child(3) {
+				animation: 1s slide-up 0.6s backwards paused;
+			}
+			&:nth-child(4) {
+				animation: 1s slide-up 0.9s backwards paused;
+			}
+		}
+	}
+}
